@@ -1,0 +1,5 @@
+config SHIELD_MENURA_LEFT
+    def_bool $(shields_list_contains,menura_left)
+
+config SHIELD_MENURA_RIGHT
+    def_bool $(shields_list_contains,menura_right)
