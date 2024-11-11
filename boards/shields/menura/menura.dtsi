@@ -1,37 +1,4 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "menura-layout.dtsi"
-
-&menura_3x5_3_layout {
-    transform = <&transform_3x5_3>;
-};
-
-&menura_3x5_2_layout {
-    transform = <&transform_3x5_2>;
-};
-
-&menura_23332_2_layout {
-    transform = <&transform_23332_2>;
-};
-
-&menura_23333_2_layout {
-    transform = <&transform_23333_2>;
-};
-
-&menura_33332_2_layout {
-    transform = <&transform_33332_2>;
-};
-
-&menura_23332_3_layout {
-    transform = <&transform_23332_3>;
-};
-
-&menura_23333_3_layout {
-    transform = <&transform_23333_3>;
-};
-
-&menura_33332_3_layout {
-    transform = <&transform_33332_3>;
-};
 
 / {
     kscan0: kscan0 {
@@ -143,8 +110,15 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3)                  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
         >;
     };
 
+    default_layout: default_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&transform_3x5_3>;
+        kscan = <&kscan0>;
+    };
+
     chosen {
-        zmk,physical-layout = &menura_3x5_3_layout;
+        zmk,physical-layout = &default_layout;
         zmk,kscan = &kscan0;
     };
 };
