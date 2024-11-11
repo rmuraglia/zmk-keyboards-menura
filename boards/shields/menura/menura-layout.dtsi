@@ -1,0 +1,332 @@
+#include <physical_layouts.dtsi>
+
+/ {
+    menura_3x5_3_layout: menura_3x5_3_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "3x5 + 3";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0   90       0     0     0>
+            , <&key_physical_attrs 100 100  100   27       0     0     0>
+            , <&key_physical_attrs 100 100  200    0       0     0     0>
+            , <&key_physical_attrs 100 100  300   27       0     0     0>
+            , <&key_physical_attrs 100 100  400   40       0     0     0>
+            , <&key_physical_attrs 100 100  800   40       0     0     0>
+            , <&key_physical_attrs 100 100  900   27       0     0     0>
+            , <&key_physical_attrs 100 100 1000    0       0     0     0>
+            , <&key_physical_attrs 100 100 1100   27       0     0     0>
+            , <&key_physical_attrs 100 100 1200   90       0     0     0>
+            , <&key_physical_attrs 100 100    0  190       0     0     0>
+            , <&key_physical_attrs 100 100  100  127       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+            , <&key_physical_attrs 100 100  300  127       0     0     0>
+            , <&key_physical_attrs 100 100  400  140       0     0     0>
+            , <&key_physical_attrs 100 100  800  140       0     0     0>
+            , <&key_physical_attrs 100 100  900  127       0     0     0>
+            , <&key_physical_attrs 100 100 1000  100       0     0     0>
+            , <&key_physical_attrs 100 100 1100  127       0     0     0>
+            , <&key_physical_attrs 100 100 1200  190       0     0     0>
+            , <&key_physical_attrs 100 100    0  290       0     0     0>
+            , <&key_physical_attrs 100 100  100  227       0     0     0>
+            , <&key_physical_attrs 100 100  200  200       0     0     0>
+            , <&key_physical_attrs 100 100  300  227       0     0     0>
+            , <&key_physical_attrs 100 100  400  240       0     0     0>
+            , <&key_physical_attrs 100 100  800  240       0     0     0>
+            , <&key_physical_attrs 100 100  900  227       0     0     0>
+            , <&key_physical_attrs 100 100 1000  200       0     0     0>
+            , <&key_physical_attrs 100 100 1100  227       0     0     0>
+            , <&key_physical_attrs 100 100 1200  290       0     0     0>
+            , <&key_physical_attrs 100 100  300  347       0     0     0>
+            , <&key_physical_attrs 100 100  405  347    1000   405   447>
+            , <&key_physical_attrs 100 100  510  367    2000   510   467>
+            , <&key_physical_attrs 100 100  690  367 (-2000)   790   467>
+            , <&key_physical_attrs 100 100  795  347 (-1000)   895   447>
+            , <&key_physical_attrs 100 100  900  347       0     0     0>
+            ;
+    };
+
+    menura_3x5_2_layout: menura_3x5_2_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "3x5 + 2";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0   90       0     0     0>
+            , <&key_physical_attrs 100 100  100   27       0     0     0>
+            , <&key_physical_attrs 100 100  200    0       0     0     0>
+            , <&key_physical_attrs 100 100  300   27       0     0     0>
+            , <&key_physical_attrs 100 100  400   40       0     0     0>
+            , <&key_physical_attrs 100 100  800   40       0     0     0>
+            , <&key_physical_attrs 100 100  900   27       0     0     0>
+            , <&key_physical_attrs 100 100 1000    0       0     0     0>
+            , <&key_physical_attrs 100 100 1100   27       0     0     0>
+            , <&key_physical_attrs 100 100 1200   90       0     0     0>
+            , <&key_physical_attrs 100 100    0  190       0     0     0>
+            , <&key_physical_attrs 100 100  100  127       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+            , <&key_physical_attrs 100 100  300  127       0     0     0>
+            , <&key_physical_attrs 100 100  400  140       0     0     0>
+            , <&key_physical_attrs 100 100  800  140       0     0     0>
+            , <&key_physical_attrs 100 100  900  127       0     0     0>
+            , <&key_physical_attrs 100 100 1000  100       0     0     0>
+            , <&key_physical_attrs 100 100 1100  127       0     0     0>
+            , <&key_physical_attrs 100 100 1200  190       0     0     0>
+            , <&key_physical_attrs 100 100    0  290       0     0     0>
+            , <&key_physical_attrs 100 100  100  227       0     0     0>
+            , <&key_physical_attrs 100 100  200  200       0     0     0>
+            , <&key_physical_attrs 100 100  300  227       0     0     0>
+            , <&key_physical_attrs 100 100  400  240       0     0     0>
+            , <&key_physical_attrs 100 100  800  240       0     0     0>
+            , <&key_physical_attrs 100 100  900  227       0     0     0>
+            , <&key_physical_attrs 100 100 1000  200       0     0     0>
+            , <&key_physical_attrs 100 100 1100  227       0     0     0>
+            , <&key_physical_attrs 100 100 1200  290       0     0     0>
+            , <&key_physical_attrs 100 100  352  347     500   352   447>
+            , <&key_physical_attrs 100 100  458  357    1500   458   457>
+            , <&key_physical_attrs 100 100  742  357 (-1500)   843   457>
+            , <&key_physical_attrs 100 100  848  347  (-500)   948   447>
+            ;
+    };
+
+    menura_23332_2_layout: menura_23332_2_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "23332 + 2";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0   95       0     0     0>
+            , <&key_physical_attrs 100 100  100   32       0     0     0>
+            , <&key_physical_attrs 100 100  200    0       0     0     0>
+            , <&key_physical_attrs 100 100  300   29       0     0     0>
+            , <&key_physical_attrs 100 100  400   92       0     0     0>
+            , <&key_physical_attrs 100 100  700   92       0     0     0>
+            , <&key_physical_attrs 100 100  800   29       0     0     0>
+            , <&key_physical_attrs 100 100  900    0       0     0     0>
+            , <&key_physical_attrs 100 100 1000   32       0     0     0>
+            , <&key_physical_attrs 100 100 1100   95       0     0     0>
+            , <&key_physical_attrs 100 100    0  195       0     0     0>
+            , <&key_physical_attrs 100 100  100  132       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+            , <&key_physical_attrs 100 100  300  129       0     0     0>
+            , <&key_physical_attrs 100 100  400  192       0     0     0>
+            , <&key_physical_attrs 100 100  700  192       0     0     0>
+            , <&key_physical_attrs 100 100  800  129       0     0     0>
+            , <&key_physical_attrs 100 100  900  100       0     0     0>
+            , <&key_physical_attrs 100 100 1000  132       0     0     0>
+            , <&key_physical_attrs 100 100 1100  195       0     0     0>
+            , <&key_physical_attrs 100 100  100  232       0     0     0>
+            , <&key_physical_attrs 100 100  200  200       0     0     0>
+            , <&key_physical_attrs 100 100  300  229       0     0     0>
+            , <&key_physical_attrs 100 100  800  229       0     0     0>
+            , <&key_physical_attrs 100 100  900  200       0     0     0>
+            , <&key_physical_attrs 100 100 1000  232       0     0     0>
+            , <&key_physical_attrs 100 100  330  355    1500   430   455>
+            , <&key_physical_attrs 100 100  430  355    3000   430   455>
+            , <&key_physical_attrs 100 100  670  355 (-3000)   770   455>
+            , <&key_physical_attrs 100 100  770  355 (-1500)   770   455>
+            ;
+    };
+
+    menura_23333_2_layout: menura_23333_2_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "23333 + 2";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0   95       0     0     0>
+            , <&key_physical_attrs 100 100  100   32       0     0     0>
+            , <&key_physical_attrs 100 100  200    0       0     0     0>
+            , <&key_physical_attrs 100 100  300   29       0     0     0>
+            , <&key_physical_attrs 100 100  400   42       0     0     0>
+            , <&key_physical_attrs 100 100  700   42       0     0     0>
+            , <&key_physical_attrs 100 100  800   29       0     0     0>
+            , <&key_physical_attrs 100 100  900    0       0     0     0>
+            , <&key_physical_attrs 100 100 1000   32       0     0     0>
+            , <&key_physical_attrs 100 100 1100   95       0     0     0>
+            , <&key_physical_attrs 100 100    0  195       0     0     0>
+            , <&key_physical_attrs 100 100  100  132       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+            , <&key_physical_attrs 100 100  300  129       0     0     0>
+            , <&key_physical_attrs 100 100  400  142       0     0     0>
+            , <&key_physical_attrs 100 100  700  142       0     0     0>
+            , <&key_physical_attrs 100 100  800  129       0     0     0>
+            , <&key_physical_attrs 100 100  900  100       0     0     0>
+            , <&key_physical_attrs 100 100 1000  132       0     0     0>
+            , <&key_physical_attrs 100 100 1100  195       0     0     0>
+            , <&key_physical_attrs 100 100  100  232       0     0     0>
+            , <&key_physical_attrs 100 100  200  200       0     0     0>
+            , <&key_physical_attrs 100 100  300  229       0     0     0>
+            , <&key_physical_attrs 100 100  400  242       0     0     0>
+            , <&key_physical_attrs 100 100  700  242       0     0     0>
+            , <&key_physical_attrs 100 100  800  229       0     0     0>
+            , <&key_physical_attrs 100 100  900  200       0     0     0>
+            , <&key_physical_attrs 100 100 1000  232       0     0     0>
+            , <&key_physical_attrs 100 100  330  355    1500   430   455>
+            , <&key_physical_attrs 100 100  430  355    3000   430   455>
+            , <&key_physical_attrs 100 100  670  355 (-3000)   770   455>
+            , <&key_physical_attrs 100 100  770  355 (-1500)   770   455>
+            ;
+    };
+
+    menura_33332_2_layout: menura_33332_2_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "33332 + 2";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0   90       0     0     0>
+            , <&key_physical_attrs 100 100  100   27       0     0     0>
+            , <&key_physical_attrs 100 100  200    0       0     0     0>
+            , <&key_physical_attrs 100 100  300   27       0     0     0>
+            , <&key_physical_attrs 100 100  400   90       0     0     0>
+            , <&key_physical_attrs 100 100  800   90       0     0     0>
+            , <&key_physical_attrs 100 100  900   27       0     0     0>
+            , <&key_physical_attrs 100 100 1000    0       0     0     0>
+            , <&key_physical_attrs 100 100 1100   27       0     0     0>
+            , <&key_physical_attrs 100 100 1200   90       0     0     0>
+            , <&key_physical_attrs 100 100    0  190       0     0     0>
+            , <&key_physical_attrs 100 100  100  127       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+            , <&key_physical_attrs 100 100  300  127       0     0     0>
+            , <&key_physical_attrs 100 100  400  190       0     0     0>
+            , <&key_physical_attrs 100 100  800  190       0     0     0>
+            , <&key_physical_attrs 100 100  900  127       0     0     0>
+            , <&key_physical_attrs 100 100 1000  100       0     0     0>
+            , <&key_physical_attrs 100 100 1100  127       0     0     0>
+            , <&key_physical_attrs 100 100 1200  190       0     0     0>
+            , <&key_physical_attrs 100 100    0  290       0     0     0>
+            , <&key_physical_attrs 100 100  100  227       0     0     0>
+            , <&key_physical_attrs 100 100  200  200       0     0     0>
+            , <&key_physical_attrs 100 100  300  227       0     0     0>
+            , <&key_physical_attrs 100 100  900  227       0     0     0>
+            , <&key_physical_attrs 100 100 1000  200       0     0     0>
+            , <&key_physical_attrs 100 100 1100  227       0     0     0>
+            , <&key_physical_attrs 100 100 1200  290       0     0     0>
+            , <&key_physical_attrs 100 100  352  347     500   352   447>
+            , <&key_physical_attrs 100 100  458  357    1500   458   457>
+            , <&key_physical_attrs 100 100  742  357 (-1500)   843   457>
+            , <&key_physical_attrs 100 100  848  347  (-500)   948   447>
+            ;
+    };
+
+    menura_23332_3_layout: menura_23332_3_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "23332 + 3";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0   95       0     0     0>
+            , <&key_physical_attrs 100 100  100   32       0     0     0>
+            , <&key_physical_attrs 100 100  200    0       0     0     0>
+            , <&key_physical_attrs 100 100  300   29       0     0     0>
+            , <&key_physical_attrs 100 100  400   92       0     0     0>
+            , <&key_physical_attrs 100 100  700   92       0     0     0>
+            , <&key_physical_attrs 100 100  800   29       0     0     0>
+            , <&key_physical_attrs 100 100  900    0       0     0     0>
+            , <&key_physical_attrs 100 100 1000   32       0     0     0>
+            , <&key_physical_attrs 100 100 1100   95       0     0     0>
+            , <&key_physical_attrs 100 100    0  195       0     0     0>
+            , <&key_physical_attrs 100 100  100  132       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+            , <&key_physical_attrs 100 100  300  129       0     0     0>
+            , <&key_physical_attrs 100 100  400  192       0     0     0>
+            , <&key_physical_attrs 100 100  700  192       0     0     0>
+            , <&key_physical_attrs 100 100  800  129       0     0     0>
+            , <&key_physical_attrs 100 100  900  100       0     0     0>
+            , <&key_physical_attrs 100 100 1000  132       0     0     0>
+            , <&key_physical_attrs 100 100 1100  195       0     0     0>
+            , <&key_physical_attrs 100 100  100  232       0     0     0>
+            , <&key_physical_attrs 100 100  200  200       0     0     0>
+            , <&key_physical_attrs 100 100  300  229       0     0     0>
+            , <&key_physical_attrs 100 100  800  229       0     0     0>
+            , <&key_physical_attrs 100 100  900  200       0     0     0>
+            , <&key_physical_attrs 100 100 1000  232       0     0     0>
+            , <&key_physical_attrs 100 100  300  347       0     0     0>
+            , <&key_physical_attrs 100 100  405  347    1000   405   447>
+            , <&key_physical_attrs 100 100  510  367    2000   510   467>
+            , <&key_physical_attrs 100 100  690  367 (-2000)   790   467>
+            , <&key_physical_attrs 100 100  795  347 (-1000)   895   447>
+            , <&key_physical_attrs 100 100  900  347       0     0     0>
+            ;
+    };
+
+    menura_23333_3_layout: menura_23333_3_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "23333 + 3";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0   95       0     0     0>
+            , <&key_physical_attrs 100 100  100   32       0     0     0>
+            , <&key_physical_attrs 100 100  200    0       0     0     0>
+            , <&key_physical_attrs 100 100  300   29       0     0     0>
+            , <&key_physical_attrs 100 100  400   42       0     0     0>
+            , <&key_physical_attrs 100 100  700   42       0     0     0>
+            , <&key_physical_attrs 100 100  800   29       0     0     0>
+            , <&key_physical_attrs 100 100  900    0       0     0     0>
+            , <&key_physical_attrs 100 100 1000   32       0     0     0>
+            , <&key_physical_attrs 100 100 1100   95       0     0     0>
+            , <&key_physical_attrs 100 100    0  195       0     0     0>
+            , <&key_physical_attrs 100 100  100  132       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+            , <&key_physical_attrs 100 100  300  129       0     0     0>
+            , <&key_physical_attrs 100 100  400  142       0     0     0>
+            , <&key_physical_attrs 100 100  700  142       0     0     0>
+            , <&key_physical_attrs 100 100  800  129       0     0     0>
+            , <&key_physical_attrs 100 100  900  100       0     0     0>
+            , <&key_physical_attrs 100 100 1000  132       0     0     0>
+            , <&key_physical_attrs 100 100 1100  195       0     0     0>
+            , <&key_physical_attrs 100 100  100  232       0     0     0>
+            , <&key_physical_attrs 100 100  200  200       0     0     0>
+            , <&key_physical_attrs 100 100  300  229       0     0     0>
+            , <&key_physical_attrs 100 100  400  242       0     0     0>
+            , <&key_physical_attrs 100 100  700  242       0     0     0>
+            , <&key_physical_attrs 100 100  800  229       0     0     0>
+            , <&key_physical_attrs 100 100  900  200       0     0     0>
+            , <&key_physical_attrs 100 100 1000  232       0     0     0>
+            , <&key_physical_attrs 100 100  300  347       0     0     0>
+            , <&key_physical_attrs 100 100  405  347    1000   405   447>
+            , <&key_physical_attrs 100 100  510  367    2000   510   467>
+            , <&key_physical_attrs 100 100  690  367 (-2000)   790   467>
+            , <&key_physical_attrs 100 100  795  347 (-1000)   895   447>
+            , <&key_physical_attrs 100 100  900  347       0     0     0>
+            ;
+    };
+
+    menura_33332_3_layout: menura_33332_3_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "33332 + 3";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0   90       0     0     0>
+            , <&key_physical_attrs 100 100  100   27       0     0     0>
+            , <&key_physical_attrs 100 100  200    0       0     0     0>
+            , <&key_physical_attrs 100 100  300   27       0     0     0>
+            , <&key_physical_attrs 100 100  400   90       0     0     0>
+            , <&key_physical_attrs 100 100  800   90       0     0     0>
+            , <&key_physical_attrs 100 100  900   27       0     0     0>
+            , <&key_physical_attrs 100 100 1000    0       0     0     0>
+            , <&key_physical_attrs 100 100 1100   27       0     0     0>
+            , <&key_physical_attrs 100 100 1200   90       0     0     0>
+            , <&key_physical_attrs 100 100    0  190       0     0     0>
+            , <&key_physical_attrs 100 100  100  127       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+            , <&key_physical_attrs 100 100  300  127       0     0     0>
+            , <&key_physical_attrs 100 100  400  190       0     0     0>
+            , <&key_physical_attrs 100 100  800  190       0     0     0>
+            , <&key_physical_attrs 100 100  900  127       0     0     0>
+            , <&key_physical_attrs 100 100 1000  100       0     0     0>
+            , <&key_physical_attrs 100 100 1100  127       0     0     0>
+            , <&key_physical_attrs 100 100 1200  190       0     0     0>
+            , <&key_physical_attrs 100 100    0  290       0     0     0>
+            , <&key_physical_attrs 100 100  100  227       0     0     0>
+            , <&key_physical_attrs 100 100  200  200       0     0     0>
+            , <&key_physical_attrs 100 100  300  227       0     0     0>
+            , <&key_physical_attrs 100 100  900  227       0     0     0>
+            , <&key_physical_attrs 100 100 1000  200       0     0     0>
+            , <&key_physical_attrs 100 100 1100  227       0     0     0>
+            , <&key_physical_attrs 100 100 1200  290       0     0     0>
+            , <&key_physical_attrs 100 100  300  347       0     0     0>
+            , <&key_physical_attrs 100 100  405  347    1000   405   447>
+            , <&key_physical_attrs 100 100  510  367    2000   510   467>
+            , <&key_physical_attrs 100 100  690  367 (-2000)   790   467>
+            , <&key_physical_attrs 100 100  795  347 (-1000)   895   447>
+            , <&key_physical_attrs 100 100  900  347       0     0     0>
+            ;
+    };
+};
+

@@ -1,6 +1,34 @@
 #include "menura.dtsi"
 
-&default_transform {
+&transform_3x5_3{
+    col-offset = <5>;
+};
+
+&transform_3x5_2{
+    col-offset = <5>;
+};
+
+&transform_23332_2{
+    col-offset = <5>;
+};
+
+&transform_23333_2{
+    col-offset = <5>;
+};
+
+&transform_33332_2{
+    col-offset = <5>;
+};
+
+&transform_23332_3{
+    col-offset = <5>;
+};
+
+&transform_23333_3{
+    col-offset = <5>;
+};
+
+&transform_33332_3{
     col-offset = <5>;
 };
 

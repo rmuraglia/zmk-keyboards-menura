@@ -15,6 +15,11 @@
             key-positions = <5 9 15 19>;
             bindings = <&bootloader>;
         };
+        combo_studio {
+            timeout-ms = <50>;
+            key-positions = <0 9 10 19>;
+            bindings = <&studio_unlock>;
+        };
     };
 };
 
@@ -29,6 +34,18 @@
 &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp FSLH
          &kp N1 &kp N2 &kp N3   &kp N4 &kp N5 &kp N6
             >;
+        };
+
+        lower_layer {
+            status = "reserved";
+        };
+
+        raise_layer {
+            status = "reserved";
+        };
+
+        adjust_layer {
+            status = "reserved";
         };
     };
 };
