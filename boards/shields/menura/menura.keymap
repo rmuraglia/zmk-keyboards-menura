@@ -16,13 +16,13 @@
         bootL: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <250>;
             bindings = <&kp Q>, <&kp Q>, <&bootloader>;
         };
         bootR: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <250>;
             bindings = <&kp P>, <&kp P>, <&bootloader>;
         };
     };
