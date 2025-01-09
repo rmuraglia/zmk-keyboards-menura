@@ -5,20 +5,25 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_bootloaderL {
-            timeout-ms = <50>;
-            key-positions = <0 4 10 14>;
-            bindings = <&bootloader>;
-        };
-        combo_bootloaderR {
-            timeout-ms = <50>;
-            key-positions = <5 9 15 19>;
-            bindings = <&bootloader>;
-        };
         combo_studio {
             timeout-ms = <50>;
             key-positions = <0 9 10 19>;
             bindings = <&studio_unlock>;
+        };
+    };
+
+    behaviors {
+        bootL: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <150>;
+            bindings = <&kp Q>, <&kp Q>, <&bootloader>;
+        };
+        bootR: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <150>;
+            bindings = <&kp P>, <&kp P>, <&bootloader>;
         };
     };
 };
@@ -29,10 +34,10 @@
 
         default_layer {
             bindings = <
-&kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I &kp O &kp P
-&kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K &kp L &kp SEMI
-&kp Z &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp FSLH
-         &kp N1 &kp N2 &kp N3   &kp N4 &kp N5 &kp N6
+&bootL &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I &kp O &bootR
+&kp A  &kp S &kp D &kp F &kp G   &kp H &kp J &kp K &kp L &kp SEMI
+&kp Z  &kp X &kp C &kp V &kp B   &kp N &kp M &kp COMMA &kp DOT &kp FSLH
+          &kp N1 &kp N2 &kp N3   &kp N4 &kp N5 &kp N6
             >;
         };
 
