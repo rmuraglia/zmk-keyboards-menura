@@ -1,5 +1,11 @@
-config SHIELD_MENURA_LEFT
-    def_bool $(shields_list_contains,menura_left)
+config SHIELD_MENURA_CENTRAL_LEFT
+    def_bool $(shields_list_contains,menura_central_left)
 
-config SHIELD_MENURA_RIGHT
-    def_bool $(shields_list_contains,menura_right)
+config SHIELD_MENURA_PERIPHERAL_RIGHT
+    def_bool $(shields_list_contains,menura_peripheral_right)
+
+config SHIELD_MENURA_DONGLE
+    def_bool $(shields_list_contains,menura_dongle)
+
+config SHIELD_MENURA_PERIPHERAL_LEFT
+    def_bool $(shields_list_contains,menura_peripheral_left)

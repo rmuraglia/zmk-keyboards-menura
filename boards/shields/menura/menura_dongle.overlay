@@ -1,0 +1,14 @@
+#include "menura.dtsi"  // if I have this include do I still need to copy all of the matrix transforms and layouts?
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+    };
+
+    mock_kscan: mock_kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+};
